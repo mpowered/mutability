@@ -6,6 +6,19 @@ http://github.com/mpowered/mutability
 
 Selectively make ActiveRecord objects readonly.
 
+== EXAMPLE:
+Define the condition that makes the model immutable:
+  class Scorecard < ActiveRecord::Base
+    make_immutable_when {|scorecard| scorecard.created_at.year < Date.today.year }
+  end
+
+Check if the model is immutable:
+  >> @scorecard = Scorecard.created_last_year.first
+  >> @scorecard.readonly?
+  => true
+
+== REQUIREMENTS:
+
 == INSTALL:
 
 sudo gem install mutability
