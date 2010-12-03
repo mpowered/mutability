@@ -17,10 +17,6 @@ Check if the model is immutable:
   >> @scorecard.readonly?
   => true
 
-== INSTALL:
-
-sudo gem install mutability
-
 == LICENSE:
 
 (The MIT License)
