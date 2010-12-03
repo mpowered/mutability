@@ -17,6 +17,10 @@ Check if the model is immutable:
   >> @scorecard.readonly?
   => true
 
+If an update or delete is attempted:
+  >> @scorecard.destroy
+  => ActiveRecord::ReadOnlyRecord: ActiveRecord::ReadOnlyRecord
+
 == LICENSE:
 
 (The MIT License)
