@@ -1,8 +1,0 @@
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-lib/mutability.rb
-lib/activerecord/mutability.rb
-
-
