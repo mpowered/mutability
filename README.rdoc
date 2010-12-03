@@ -17,8 +17,6 @@ Check if the model is immutable:
   >> @scorecard.readonly?
   => true
 
-== REQUIREMENTS:
-
 == INSTALL:
 
 sudo gem install mutability
